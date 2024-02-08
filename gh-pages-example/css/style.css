@@ -1,4 +1,26 @@
+@charset "utf-8";
+
 body{
-    background-color: darkgray;
+    background-color: lightgray;
     text-align: center;
 }
+
+
+/*ボタンの装飾*/
+/*<a href="#" class="btn-square">BUTTON</a>
+    これはHTMLに記述するヤツ*/
+.btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: chocolate;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+  .btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
