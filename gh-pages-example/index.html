@@ -3,12 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <title>雑学クイズ</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h1>雑学クイズ</h1>
+        <h1>戦国時代クイズ</h1>
         <h2>遊び方</h2>
         <p>選択肢を選んで答えてね！</p>
+
+        
+        <div id="start-container">
+        <a href="#" class="btn_02" onclick="startDiagnosis2()">クイズ開始</a>
+        </div>
+
+        <div id="question-container2" class="question-container2">
+            <mode id="question-mode2"></mode>
+            <h2 id="question-text2" class="question-text2"></h2>
+            <form id="answer-form2-0"> 
+                <label><input type="radio" name="answer" value="1">①本能寺の変</label><br>
+                <label><input type="radio" name="answer" value="2">②大阪夏の陣</label>
+                <br>
+                <button id="Nextbutton" type="button" onclick="nextQuestion2()">次へ</button>
+                <br>
+            </form>
+            <form id="answer-form2-1">
+                <label><input type="radio" name="answer1" value="1">①徳川家康</label><br>
+                <label><input type="radio" name="answer1" value="2">②武田信玄</label>
+                <br>
+                <button id="Backbutton" type="button" onclick="goBack2()">戻る</button>
+                <button id="Nextbutton" type="button" onclick="nextQuestion2()">次へ</button>
+                <br>
+            </form>
+        
+            <form id="answer-form2-2">
+                <label><input type="radio" name="answer2" value="1">①種子島</label><br>
+                <label><input type="radio" name="answer2" value="2">②淡路島</label>
+                <br>
+                <button id="Backbutton" type="button" onclick="goBack2()">戻る</button>
+                <button id="Nextbutton" type="button" onclick="nextQuestion2()">次へ</button>
+                <br>
+            </form>
+        
+            <form id="answer-form2-3">
+                <label><input type="radio" name="answer3" value="1">①100年</label><br>
+                <label><input type="radio" name="answer3" value="2">②140年</label>
+                <br>
+                <button id="Backbutton" type="button" onclick="goBack2()">戻る</button>
+                <button id="Nextbutton" type="button" onclick="nextQuestion2()">次へ</button>
+                <br>
+            </form>
+        
+            <form id="answer-form2-4">
+                <label><input type="radio" name="answer4" value="1">①徳川家康</label><br>
+                <label><input type="radio" name="answer4" value="2">②豊臣秀吉</label>
+                <br>
+                <button id="Backbutton" type="button" onclick="goBack2()">戻る</button>
+                <button id="Nextbutton" type="button" onclick="nextQuestion2()">次へ</button>
+                <br>
+            </form>
+        </div>
+
+        <div id="result-container2"> <!-- 追加：結果表示のコンテナ -->
+            <r>5問のうち</r>
+                <rr id="result-text2">
+                    <nobr></nobr>
+                </rr>
+            <r>です。</r><br>
+        </div>
+        
+        <script src="./javascript/script.js"></script>
     </body>
 </html>
